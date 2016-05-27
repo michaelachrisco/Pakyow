@@ -18,7 +18,7 @@ Pakyow::App.define do
     # development config goes here
   end
 
-  configure :production do
-    # production config goes here
+  onfigure :production do
+    realtime.redis = { url: ENV['REDIS_URL'] }
   end
 end
